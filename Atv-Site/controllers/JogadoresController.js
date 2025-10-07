@@ -1,7 +1,6 @@
 import express from "express";
 const router = express.Router();
 
-// ROTA CLIENTES
 router.get("/jogadores", function (req, res) {
   const jogadores = [
     {

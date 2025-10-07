@@ -1,72 +1,31 @@
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/navbar.ejs') %>
 
-    <div class="container">
-        <div class="jumbotron">
-            <br>
-                        <h1 class="display-5"><strong>Bem-vindo(a) ao Site perfeito para torcedores do Lakers</strong></h1>
-            <p class="lead">Através desse Site você poderá conhecer um pouco mais sobre a história gigantesca desse time.</p>
-            <hr class="my-4">
-            
-                        <div id="lakersCarousel" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                    <li data-target="#lakersCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#lakersCarousel" data-slide-to="1"></li>
-                    <li data-target="#lakersCarousel" data-slide-to="2"></li>
-                </ol>
-
-                                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imgs/lakers.png" class="d-block w-100" style="height: 180px; object-fit: cover;" alt="Lakers Legends">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Magic, Kareem, Kobe</h5>
-                            <p>Grandes momentos da história.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/lendas.png" class="d-block w-100" style="height: 180px; object-fit: cover;" alt="Lakers Championship">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Títulos e glórias</h5>
-                            <p>O time com mais títulos na história.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/avatar.png" class="d-block w-100" style="height: 180px; object-fit: cover;" alt="LeBron James">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>A era moderna</h5>
-                            <p>O legado continua com LeBron e a nova geração.</p>
-                        </div>
-                    </div>
-                </div>
-
-                                <a class="carousel-control-prev" href="#lakersCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#lakersCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-                </a>
-            </div>
-                        
-                        <p class="lead">
-              <a class= "btn btn-info btn-lg" href="/lendas" role="button">Conheça nossas lendas</a>
-            </p>
-          </div>
-        <hr>
-        <div class="card">
-            <div class="card-header">
-                <h1>Para onde deseja ir?</h1>
-            </div>
-            <div class="card-body">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/jogadores">Jogadores</a></li>
-                    <li><a href="/titulos">Titulos</a></li>
-                    <li><a href="/lendas">Lendas</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    
+    <div class="container">
+        <div class="jumbotron">
+            <br>
+            <h1 class="display-5"><strong>Bem-vindo(a) ao paraiso dos fãs do Lakers</strong></h1>
+            <p class="lead">Conheça mais sobre seu time do coração</p>
+            <hr class="my-4">
+            </p>         
+            <p class="lead">
+              <a class="btn btn-info btn-lg" href="/jogadores" role="button">Conheça nosso elenco</a>
+            </p>
+          </div>
+        <hr>
+        <div class="card">
+            <div class="card-header">
+                <h1>Para onde deseja ir?</h1>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/jogadores">Jogadores</a></li>
+                    <li><a href="/lendas">Lendas</a></li>
+                    <li><a href="/titulos">Titulos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
 <%- include ('partials/footer.ejs') %>
