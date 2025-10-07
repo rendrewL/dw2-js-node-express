@@ -1,0 +1,34 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Titulos</h1>
+            </div>
+            <div class="card-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Ano:</th>
+                            <th>MVP:</th>
+                            <th>Placar da Final:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% titulos.forEach(titulos => { %>
+                        <tr>
+                            <td><img src="imgs/trophy.png" width="30px"></td>
+                            <td><%= titulos.ano %></td>
+                            <td><%= titulos.MVP %></td>
+                            <td><%= titulos.PF %></td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<%- include ('partials/footer.ejs') %>

@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs') %>
+    <h1>Bem-vindo a pagina de Produtos!</h1>
+    <h2>Lista de produtos</h2>
+    <%#= produtos %>
+    
+    <!-- Percorrendo a lista de produtos com forEach-->
+    <ul>
+    <% produtos.forEach(produtos => { %>
+        <li> <%= produtos.nome %> </li>
+        <li>  <%= produtos.preco.toLocaleString("pt-br", {style: "currency", currency: "BRL"}) %> </li>
+        <br>
+   <% }) %>
+</ul>
+
+    <br>
+    <br>
+    <ul>
+        <li><a href="/">Homepage</a></li>
+        <li><a href="/clientes">Clientes</a></li>
+         <li><a href="/perfil">Perfil</a></li>
+    </ul>
+<%- include('partials/footer.ejs') %>

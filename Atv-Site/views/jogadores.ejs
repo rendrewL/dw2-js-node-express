@@ -1,0 +1,40 @@
+<%- include ('partials/header.ejs') %>
+    <%- include ('partials/navbar.ejs') %>
+
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Elenco</h1>
+                </div>
+                <div class="card-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Nome:</th>
+                                <th>Altura:</th>
+                                <th>Idade:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% jogadores.forEach(jogadores=> { %>
+                                <tr>
+                                 <td><img src="imgs/avatar.png" width="30px"></td>
+                                    <td>
+                                        <%= jogadores.nome %>
+                                    </td>
+                                    <td>
+                                        <%= jogadores.altura %>
+                                    </td>
+                                    <td>
+                                        <%= jogadores.idade %>
+                                    </td>
+                                </tr>
+                                <% }) %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <%- include ('partials/footer.ejs') %>

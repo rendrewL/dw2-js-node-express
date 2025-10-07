@@ -1,9 +1,12 @@
-//Importando o express (framework)
+5//Importando o express (framework)
 const express = require("express");
 //Iniciando o express na variavel "app"
 const app = express();
 
 app.set("view engine", "ejs");
+
+//Definindo a pasta PUBLIC para arquivos estaticos
+app.use(express.static("public"));
 
 // Criando a primeira rota do site (ROTA PRINCINPAL)
 // Definindo a rota raiz "/"
@@ -31,9 +34,11 @@ app.get("/produtos", (req, res) => {
 });
 
 //ROTA DO PERFIL
-app.get("/perfil", (req, res) => {
+//:user -> è o parametro da rota (OBRIGATORIO)
+//:user? -> É um parametro da rota (OPCIONAL)
+app.get("/perfil/:user?", (req, res) => {
   //Criando a variavel que será enviada para página
-  const user = "Endrew Lemos";
+  const user = req.params.user;
   res.render("perfil", {
     //Enviando variaves para a pagina EJS (HTML)
     user: user,
@@ -52,7 +57,7 @@ app.get("/clientes", (req, res) => {
     clientes : clientes
   });
 });
-
+  
 // Iniciando o Servidor HTTP
 // O servidor escutará na porta 8080
 const port = 8080;
